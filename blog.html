@@ -1,0 +1,14 @@
+---
+layout: default
+permalink: "/blog/"
+---
+{% for p in site.posts %}
+	<article>
+		<header>
+			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
+			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}"></time></p>
+		</header>
+
+		{{ p.excerpt }}
+	</article>
+{% endfor %}
