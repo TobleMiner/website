@@ -1,0 +1,5 @@
+Header set X-Powered-By "Kittens"
+Header unset Server
+
+RewriteEngine On
+RewriteRule ^favicon\.ico$ /img/favicon.ico
