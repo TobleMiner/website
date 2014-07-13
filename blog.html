@@ -3,12 +3,16 @@ layout: default
 permalink: "/blog/"
 ---
 {% for p in site.posts %}
+{% if p.categories contains 'blog' %}
 	<article>
 		<header>
 			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
-			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}"></time></p>
+			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time></p>
 		</header>
 
 		{{ p.excerpt }}
+
+		<p class="continue"><a href="{{ p.url }}">Weiterlesen</a></p>
 	</article>
+{% endif %}
 {% endfor %}
