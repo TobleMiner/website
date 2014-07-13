@@ -7,6 +7,6 @@ url: "https://elomatreb.eu"
 
 # Build settings
 markdown: kramdown
-permalink: :title.html
+permalink: :categories/:title.html
 include:
   - .htaccess
