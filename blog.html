@@ -2,8 +2,8 @@
 layout: default
 permalink: "/blog/"
 ---
-{% for p in site.posts %}
-{% if p.categories contains 'blog' %}
+{% assign i = '.' %}{% for p in site.posts %}{% if p.categories contains 'blog' %}
+	{% if i.size < 4 %}
 	<article>
 		<header>
 			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
@@ -12,7 +12,13 @@ permalink: "/blog/"
 
 		{{ p.excerpt }}
 
-		<p class="continue"><a href="{{ p.url }}">Weiterlesen</a></p>
+		<p class="continue"><a href="{{ p.url }}">Continue reading</a></p>
 	</article>
-{% endif %}
-{% endfor %}
+	{% else %}
+	<article>
+		<a href="{{ p.url }}">
+			<time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time>: <span class="title">{{ p.title }}</span>
+		</a>
+	</article>
+	{% endif %}
+{% capture i %}{{ i | append:'.' }}{% endcapture %}{% endif %}{% endfor %}
