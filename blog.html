@@ -15,7 +15,7 @@ permalink: "/blog/"
 		<p class="continue"><a href="{{ p.url }}">Continue reading</a></p>
 	</article>
 	{% else %}
-	<article>
+	<article class="small">
 		<a href="{{ p.url }}">
 			<time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time>: <span class="title">{{ p.title }}</span>
 		</a>
