@@ -7,7 +7,7 @@ permalink: "/blog/"
 	<article>
 		<header>
 			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
-			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time></p>
+			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time>.</p>
 		</header>
 
 		{{ p.excerpt }}
