@@ -6,10 +6,16 @@ baseurl: ""
 url: "https://elomatreb.eu"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: :categories/:title.html
 include:
   - .htaccess
+
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - with_toc_data
 
 sass:
   sass_dir: css
