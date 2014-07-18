@@ -1,0 +1,304 @@
+---
+---
+$sans-serif: "Fira Sans", sans-serif;
+$serif: "Lora", serif;
+
+$accent: #0e407b;
+$grey: #222;
+
+@import "bourbon/bourbon", "reset", "syntax_theme";
+
+html, body, .home {
+	@include size(100%);
+	position: relative;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-family: $sans-serif;
+	color: $grey;
+}
+
+a {
+	display: inline-block;
+	line-height: 1.618em;
+	text-decoration: none;
+	color: inherit;
+	border-bottom: rem(1) solid rgba($accent, .5);
+
+	@include transition-property(color, border-color);
+	@include transition-duration(.15s);
+	@include transition-timing-function(ease-in-out);
+
+	&:hover, &:active {
+		border-bottom-color: $accent;
+		color: $grey;
+	}
+
+	&:active {
+		@include transform(translateY(1px));
+	}
+}
+
+body > header {
+	padding: 7.5rem em(20);
+	text-align: center;
+
+	a {
+		color: #fff;
+		padding: .75em 1.5em .75em 1.75em;
+		border-width: 0;
+		background-color: $accent;
+		text-transform: uppercase;
+		font-weight: 500;
+		letter-spacing: .15em;
+
+		&:hover {
+			color: lighten($accent, 50%);
+		}
+	}
+}
+
+.home {
+	display: table;
+
+	> div {
+		display: table-cell;
+		vertical-align: middle;
+
+		> div {
+			text-align: left;
+			width: em(440);
+			margin: 0 auto;
+		}
+	}
+
+	h1, h2 {
+		font-family: $serif;
+		font-weight: bold;
+		font-style: italic;
+		line-height: 2rem;
+	}
+
+	h1 {
+		font-size: rem(22);
+	}
+
+	h2 {
+		font-size: rem(15);
+		color: $accent;
+	}
+
+	span {
+		color: lighten($grey, 30%)
+	}
+
+	ul {
+		padding-top: .25rem;
+		font-size: 0;
+	}
+
+	li {
+		font-size: rem(13);
+		display: inline-block;
+		line-height: rem(22);
+
+		&:after {
+			content: "/";
+			font-size: rem(10);
+			margin-right: .5em;
+			color: lighten($grey, 35%);
+		}
+
+		&:last-of-type:after {
+			content: none;
+			display: none;
+		}
+
+		a {
+			color: lighten($grey, 20%);
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			padding-left: .1em;
+			margin-right: .5em;
+
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}
+
+.home, article, header {
+	a {
+		color: lighten($grey, 20%);
+	}
+}
+
+article, header {
+	max-width: em(760);
+	margin: 0 auto;
+}
+
+article {
+	padding: 0 em(20);
+	margin-bottom: 2rem;
+
+	&.small {
+		&:before {
+			content: "— ";
+			color: lighten($grey, 45%);
+		}
+
+		time {
+			color: lighten($grey, 45%);
+			padding-left: .5em;
+		}
+
+		a {
+			border-width: 0;
+		}
+
+		.title {
+			padding-left: .5em;
+		}
+	}
+
+	header {
+		text-align: center;
+
+		h1 {
+			font: italic 700 2rem/1em "Lora", serif;
+
+			&:hover:after {
+				display: none;
+			}
+		}
+
+		p {
+			color: lighten($grey, 50%);
+			font-style: italic;
+		}
+	}
+
+	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
+		padding-bottom: 3rem;
+
+	}
+
+	p, li, figcaption {
+		color: lighten($grey, 15%);
+		line-height: 2em;
+	}
+
+	p {
+		&.note {
+			font-style: italic;
+			color: lighten($grey, 45%);
+		}
+	}
+
+	code, pre {
+		font-family: monospace;
+	}
+
+	pre {
+		line-height: 1.5rem;
+	}
+
+	.highlight code:before {
+		content: attr(data-lang);
+		display: block;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding-left: 1em;
+		margin-bottom: 1em;
+		border-bottom: rem(2) solid $accent;
+	}
+
+	ul li {
+		list-style: none;
+
+		&:before {
+			content: "-";
+			padding-right: .5em;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	h2, h3, h4 {
+		font-weight: 500;
+
+		code {
+			font-style: normal;
+			font-weight: 400;
+		}
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	h6 {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+}
+
+.page {
+	.email {
+		font-size: 1.25em;
+	}
+
+	.pgp {
+		font-size: .75em;
+	}
+}
+
+footer, .home {
+	text-align: center;
+}
+
+footer {
+	padding: 2em 0;
+	color: #fff;
+	background-color: $accent;
+	border-top: em(4) solid darken($accent, 5%);
+	border-bottom: em(4) solid darken($accent, 5%);
+	margin-bottom: em(-4);
+
+	p {
+		font-size: rem(14);
+		font-weight: 500;
+		padding-bottom: 1.25rem;
+	}
+
+	a {
+		border-color: rgba(#fff, .5);
+
+		&:hover {
+			color: lighten($accent, 50%);
+			border-color: rgba(#fff, .75);
+		}
+	}
+}
