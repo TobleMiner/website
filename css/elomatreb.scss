@@ -1,7 +1,7 @@
 ---
 ---
 $sans-serif: "Fira Sans", sans-serif;
-$serif: "Lora", serif;
+$serif: Lora, Georgia, serif;
 
 $accent: #0e407b;
 $grey: #222;
@@ -100,13 +100,13 @@ body > header {
 	}
 
 	li {
-		font-size: rem(13);
+		font-size: rem(11);
 		display: inline-block;
 		line-height: rem(22);
 
 		&:after {
 			content: "/";
-			font-size: rem(10);
+			font-size: rem(9);
 			margin-right: .5em;
 			color: lighten($grey, 35%);
 		}
@@ -117,7 +117,6 @@ body > header {
 		}
 
 		a {
-			color: lighten($grey, 20%);
 			text-transform: uppercase;
 			letter-spacing: .1em;
 			padding-left: .1em;
@@ -139,6 +138,12 @@ body > header {
 article, header {
 	max-width: em(760);
 	margin: 0 auto;
+}
+
+
+p, li, figcaption {
+	color: lighten($grey, 15%);
+	line-height: 2em;
 }
 
 article {
@@ -169,7 +174,15 @@ article {
 		text-align: center;
 
 		h1 {
-			font: italic 700 2rem/1em "Lora", serif;
+			font-weight: 500;
+			font-size: 2.5rem;
+
+			a {
+				padding: 0 .5em;
+				border-width: rem(2);
+				border-left:  rem(2) solid transparent;
+				border-right: rem(2) solid transparent;
+			}
 
 			&:hover:after {
 				display: none;
@@ -182,22 +195,18 @@ article {
 		}
 	}
 
-	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
-		padding-bottom: 3rem;
-
-	}
-
-	p, li, figcaption {
-		color: lighten($grey, 15%);
-		line-height: 2em;
-	}
-
 	p {
+		padding: 0 .5em;
+
 		&.note {
 			font-style: italic;
 			color: lighten($grey, 45%);
 			text-align: center;
 		}
+	}
+
+	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
+		padding-bottom: 3rem;
 	}
 
 	code, pre {
@@ -206,6 +215,7 @@ article {
 
 	pre {
 		line-height: 1.5rem;
+		overflow-x: scroll;
 	}
 
 	.highlight code:before {
@@ -218,12 +228,17 @@ article {
 		border-bottom: rem(2) solid $accent;
 	}
 
+	ol, ul {
+		padding-left: 1em;
+	}
+
 	ul li {
 		list-style: none;
 
 		&:before {
 			content: "-";
 			padding-right: .5em;
+			color: lighten($grey, 45%);
 		}
 	}
 
@@ -272,7 +287,11 @@ article {
 	}
 
 	.pgp {
-		font-size: .75em;
+		font-size: .85em;
+
+		span {
+			font-family: monospace;
+		}
 	}
 }
 
@@ -281,25 +300,73 @@ footer, .home {
 }
 
 footer {
-	padding: 2em 0;
-	color: #fff;
-	background-color: $accent;
-	border-top: em(4) solid darken($accent, 5%);
-	border-bottom: em(4) solid darken($accent, 5%);
-	margin-bottom: em(-4);
+	padding: 5em 0;
+	border-top: rem(4) solid lighten($accent, 10%);
 
 	p {
-		font-size: rem(14);
-		font-weight: 500;
+		font-size: rem(13);
 		padding-bottom: 1.25rem;
+
+		&:first-of-type {
+			font-size: rem(15)
+		}
+	}
+}
+
+@media print {
+	pre {
+		overflow: hidden;
+		white-space: pre-wrap;
+		page-break-inside: avoid;
 	}
 
-	a {
-		border-color: rgba(#fff, .5);
+	body > header a {
+		&:before {
+			content: "From ";
+		}
 
-		&:hover {
-			color: lighten($accent, 50%);
-			border-color: rgba(#fff, .75);
+		&:after {
+			content: ".eu"
+		}
+	}
+
+	article, footer {
+		p a {
+			color: inherit;
+
+			&:after {
+				content: " (" attr(href) ") ";
+				color: lighten($grey, 25%);
+			}
+		}
+	}
+
+	.home {
+		@include size(auto);
+		position: static;
+		padding: 5rem 0;
+
+		ul {
+			padding-top: 5rem;
+		}
+
+		li {
+			display: block;
+
+			&:after {
+				display: none;
+			}
+
+			a {
+				line-height: 2em;
+				border-width: 0;
+
+				&:after {
+					content: ": https://elomatreb.eu" attr(href);
+					text-transform: none;
+					letter-spacing: 0;
+				}
+			}
 		}
 	}
 }
