@@ -34,4 +34,4 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 
 <p class="note">Quellverweis: <a href="http://www.e-recht24.de/muster-disclaimer.html">eRecht24</a></p>
 
-[email]: 	mailto://webmaster@elomatreb.eu
+[email]: 	mailto:webmaster@elomatreb.eu
