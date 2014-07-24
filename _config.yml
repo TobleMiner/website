@@ -10,6 +10,8 @@ markdown: redcarpet
 permalink: :categories/:title.html
 include:
   - .htaccess
+exclude:
+  - Gemfile
 
 redcarpet:
   extensions:
