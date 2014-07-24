@@ -284,6 +284,7 @@ article {
 .page {
 	.email {
 		font-size: 1.25em;
+		font-weight: 500;
 	}
 
 	.pgp {
@@ -306,6 +307,7 @@ footer {
 	p {
 		font-size: rem(13);
 		padding-bottom: 1.25rem;
+		color: lighten($grey, 25%);
 
 		&:first-of-type {
 			font-size: rem(15)
