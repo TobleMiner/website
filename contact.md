@@ -24,7 +24,7 @@ Additionally, I also occasionally use [Google+][google+].
 
 ### Work
 
-If you want to get an impression of my work, I would recommend viewing my <a href="#/work/" class="disabled">portfolio</a>.
+If you want to get an impression of my work, I would recommend viewing my <a href="/work/">portfolio</a>.
 
 Another useful resource may be my [GitHub account][github], where you can see my contributions to various Open Source software projects. Besides that, I also have an [account on CodePen][codepen], which I occasionally use to play around with random web technologies.
 
