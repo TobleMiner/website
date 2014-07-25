@@ -12,6 +12,7 @@ include:
   - .htaccess
 exclude:
   - Gemfile
+  - vendor
 
 redcarpet:
   extensions:
