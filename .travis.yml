@@ -5,4 +5,4 @@ rvm:
   - 2.0
   - 1.9
 
-script: jekyll build
+script: rake build

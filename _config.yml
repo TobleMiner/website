@@ -12,6 +12,9 @@ include:
   - .htaccess
 exclude:
   - Gemfile
+  - Rakefile
+  - elomatreb.eu.sublime-project
+  - elomatreb.eu.sublime-workspace
   - vendor
 
 redcarpet:
