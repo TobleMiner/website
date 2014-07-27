@@ -26,3 +26,11 @@ redcarpet:
 sass:
   sass_dir: css
   style: :compressed
+
+image:
+  source: "img"
+  output: "img/generated"
+  presets:
+    default:
+      width: 760
+      height: AUTO
