@@ -44,6 +44,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
+    mini_magick (3.8.0)
+      subexec (~> 0.2.1)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
@@ -57,6 +59,7 @@ GEM
     redcarpet (3.1.2)
     safe_yaml (1.0.3)
     sass (3.3.10)
+    subexec (0.2.3)
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
@@ -67,4 +70,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.1)
+  mini_magick (~> 3.8)
   rake (~> 10)
