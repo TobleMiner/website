@@ -6,12 +6,12 @@ task :build do
 	sh "bundle exec jekyll build"
 end
 
-desc "Publish the site via SSH/SCP"
-task :publish => :build do
-	puts "Cleaning up remote directories via SSH..."
-	sh "ssh elomatreb@elomatreb.eu -p 5190 './cleanup_jekyll.sh'"
-	# @TODO: Finish publishing
-end
+# Now published using GitHub+Travis CI
+# desc "Publish the site via SSH/SCP"
+# task :publish => :build do
+# 	puts "Cleaning up remote directories via SSH..."
+# 	sh "ssh elomatreb@elomatreb.eu -p 5190 './cleanup_jekyll.sh'"
+# end
 
 desc "Build the site using Jekyll, with automatic re-build on save."
 task :watch do
