@@ -185,7 +185,6 @@ article {
 
 			a {
 				padding: 0 .5em;
-				border-width: rem(2);
 				border-left:  rem(2) solid transparent;
 				border-right: rem(2) solid transparent;
 			}
@@ -203,6 +202,7 @@ article {
 
 	p {
 		padding: 0 .5em;
+		font-size: em(19);
 
 		&.note {
 			font-style: italic;
@@ -217,13 +217,13 @@ article {
 
 	blockquote p {
 		padding: 0;
-		font-size: 2rem;
+		font-size: 2em;
 		font-style: italic;
 		color: lighten($grey, 45%);
 	}
 
 	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
-		padding-bottom: 3rem;
+		padding-bottom: 3.75rem;
 	}
 
 	code, pre {
