@@ -19,6 +19,7 @@ exclude:
 
 redcarpet:
   extensions:
+    - smart
     - fenced_code_blocks
     - no_intra_emphasis
     - with_toc_data
