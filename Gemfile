@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.1'
 #ruby-gemset=elomatreb_website
 
-gem 'jekyll', '~> 2.1'
+gem 'jekyll', '~> 2.2'
 gem 'rake', '~> 10'
 gem 'mini_magick', '~> 3.8'
 
