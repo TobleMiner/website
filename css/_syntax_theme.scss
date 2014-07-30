@@ -34,7 +34,7 @@
 .na { color: #997D00 } /* Name.Attribute */
 .nb { color: $accent } /* Name.Builtin */
 .nc { color: $grey; font-style: italic; } /* Name.Class */
-.no { color: $grey } /* Name.Constant */
+.no { color: lighten($grey, 25%) } /* Name.Constant */
 .nd { color: #5c35cc; font-weight: 700 } /* Name.Decorator */
 .ni { color: #ce5c00 } /* Name.Entity */
 .ne { color: #cc0000; font-weight: 700 } /* Name.Exception */
