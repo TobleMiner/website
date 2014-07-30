@@ -3,7 +3,7 @@ layout: blog
 permalink: "/blog/"
 ---
 {% assign i = '.' %}{% for p in site.posts %}{% if p.categories contains 'blog' %}
-	{% if i.size < 4 %}
+	{% if i.size < 3 %}
 	<article>
 		<header>
 			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
