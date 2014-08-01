@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{{ site.description }}">
 	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<link rel="alternate" href="{{ site.url | append: site.baseurl | append: '/feed.xml' }}" type="application/rss+xml">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="stylesheet" href="{{ '//fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,700|Lora:700italic' | uri_escape }}">
 	<link rel="stylesheet" href="{{ '/css/elomatreb.css' }}">
