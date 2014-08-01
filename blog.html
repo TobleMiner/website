@@ -7,7 +7,7 @@ permalink: "/blog/"
 	<article>
 		<header>
 			<h1><a href="{{ p.url }}">{{ p.title }}</a></h1>
-			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time>.</p>
+			<p>Published <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d" }}<sup>{{ p.date | ordinal }}</sup> {{ p.date | date: "%B %Y" }}</time>.</p>
 		</header>
 
 		{{ p.excerpt }}
@@ -17,7 +17,7 @@ permalink: "/blog/"
 	{% else %}
 	<article class="small">
 		<a href="{{ p.url }}">
-			<time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date_to_long_string }}</time>: <span class="title">{{ p.title }}</span>
+			<time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d" }}<sup>{{ p.date | ordinal }}</sup> {{ p.date | date: "%B %Y" }}</time>: <span class="title">{{ p.title }}</span>
 		</a>
 	</article>
 	{% endif %}
