@@ -191,7 +191,7 @@ article {
 
 			a {
 				padding: 0 .5em;
-				border-width: 0;
+				border-width: rem(2);
 			}
 
 			&:hover:after {
@@ -363,10 +363,13 @@ footer {
 }
 
 @media print {
+	pre, img, figure, ul, li {
+		page-break-inside: avoid;
+	}
+
 	pre {
 		overflow: hidden;
 		white-space: pre-wrap;
-		page-break-inside: avoid;
 	}
 
 	body > header a {
