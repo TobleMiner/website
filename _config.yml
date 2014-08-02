@@ -17,6 +17,9 @@ exclude:
   - elomatreb.eu.sublime-workspace
   - vendor
 
+gems:
+  - jekyll-sitemap
+
 redcarpet:
   extensions:
     - smart

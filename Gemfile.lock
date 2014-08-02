@@ -35,6 +35,7 @@ GEM
     jekyll-paginate (1.0.0)
     jekyll-sass-converter (1.1.0)
       sass (~> 3.2)
+    jekyll-sitemap (0.5.1)
     jekyll-watch (1.0.0)
       listen (~> 2.7)
     kramdown (1.4.0)
@@ -70,5 +71,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.2)
+  jekyll-sitemap
   mini_magick (~> 3.8)
   rake (~> 10)
