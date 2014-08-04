@@ -12,7 +12,7 @@ Generated using Jekyll. Source: https://github.com/elomatreb/website
 
 */
 
-@import "bourbon/bourbon", "reset", "syntax_theme";
+@import "bourbon/bourbon", "reset", "solarized-light";
 
 html, body, .home {
 	@include size(100%);
@@ -245,17 +245,7 @@ article {
 
 	pre {
 		line-height: 1.5rem;
-		overflow-x: scroll;
-	}
-
-	.highlight code:before {
-		content: attr(data-lang);
-		display: block;
-		text-transform: uppercase;
-		font-weight: 700;
-		padding-left: 1em;
-		margin-bottom: 1em;
-		border-bottom: rem(2) solid $accent;
+		overflow-x: auto;
 	}
 
 	ol, ul {
