@@ -305,6 +305,16 @@ article {
 		font-size: 1.25rem;
 	}
 
+	:target {
+		padding-top: .5em;
+
+		&:before {
+			content: " ";
+			padding-right: .5em;
+			border-left: rem(4) solid lighten($accent, 50%);
+		}
+	}
+
 	sup, sub {
 		font-size: .75em;
 	}
