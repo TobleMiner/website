@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: About
 ---
 
 Hi! I am Ole Bertram, or elomatreb. On this page, I listed the various ways to contact me and the many places where you can look at stuff I made.
@@ -18,7 +18,7 @@ If you want to tell me something or ask me any questions, E-Mail is propably the
 
 If you don't care that your message is public, my [Twitter][twitter] is also a very good option, although I use it mostly to rant about about things.
 
-For Instant Messaging, I don't really use anything besides my [XMPP][xmpp].
+For Instant Messaging, I don't really use anything besides XMPP at [ole@elomatreb.eu][xmpp].
 
 Additionally, I also occasionally use [Google+][google+].
 
@@ -26,7 +26,7 @@ Additionally, I also occasionally use [Google+][google+].
 
 If you want to get an impression of my work, I would recommend viewing my <a href="/work/">portfolio</a>.
 
-Another useful resource may be my [GitHub account][github], where you can see my contributions to various Open Source software projects. Besides that, I also have an [account on CodePen][codepen], which I occasionally use to play around with random web technologies.
+Another useful resource may be my [GitHub account][github], where you can see my contributions to various Open Source software projects, or maybe my [account on CodePen][codepen], which I occasionally use to play around with random web technologies.
 
 [twitter]: 	https://twitter.com/elomatreb
 [xmpp]:		xmpp://ole@elomatreb.eu
