@@ -40,11 +40,8 @@ article {
 
 			a {
 				padding: 0 .5em;
-				border-width: rem(2);
-			}
-
-			&:hover:after {
-				display: none;
+				border-width: 0;
+				color: $grey;
 			}
 		}
 

@@ -35,26 +35,30 @@ table {
 
 h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizeLegibility;
-	@include font-feature-settings("kern", "liga", "dlig");
+	@include font-feature-settings("kern", "liga", "dlig", "smcp");
 }
 
 a {
-	display: inline-block;
 	line-height: 1.618em;
 	text-decoration: none;
 	color: inherit;
-	border-bottom: rem(1) solid rgba($accent, .5);
+	@include background-image(linear-gradient(rgba($accent, .5), rgba($accent, .5)));
+	background-size: 1px 1px;
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	overflow-y: visible;
 
-	@include transition-property(color, border-color);
+	@include transition-property(color, text-shadow);
 	@include transition-duration(.15s);
 	@include transition-timing-function(ease-in-out);
 
-	&:hover, &:active {
-		border-bottom-color: $accent;
+	&:hover {
 		color: $grey;
 	}
 
 	&:active {
-		@include transform(translateY(1px));
+		color: transparent;
+		@include transition-duration(0);
+		text-shadow: 0 1px 2px rgba($grey, .75);
 	}
 }
