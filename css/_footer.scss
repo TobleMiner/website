@@ -1,0 +1,18 @@
+footer, .home {
+	text-align: center;
+}
+
+footer {
+	padding: 5em 0;
+	border-top: rem(4) solid lighten($accent, 10%);
+
+	p {
+		font-size: rem(13);
+		padding-bottom: 1.25rem;
+		color: lighten($grey, 25%);
+
+		&:first-of-type {
+			font-size: rem(15)
+		}
+	}
+}

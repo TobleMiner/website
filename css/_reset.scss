@@ -9,28 +9,52 @@
 	font: inherit;
 	vertical-align: baseline;
 }
-// HTML5 display-role reset for older browsers 
+
 article, aside, details, figcaption, figure, 
 picture, footer, header, hgroup, menu, nav, main, section {
 	display: block;
 }
+
 body {
+	color: $grey;
+	font-family: $sans-serif;
 	line-height: 1;
 	overflow-y: scroll;
-	font-kerning: auto;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 h1,h2,h3,h4,h5,h6 {
 	text-rendering: optimizeLegibility;
-	-webkit-font-feature-settings: "kern", "liga", "dlig";
-	-moz-font-feature-settings: "liga=1, dlig=1";
-	-ms-font-feature-settings: "liga", "dlig";
-	-o-font-feature-settings: "liga", "dlig";
-	font-feature-settings: "liga", "dlig";
+	@include font-feature-settings("kern", "liga", "dlig");
+}
+
+a {
+	display: inline-block;
+	line-height: 1.618em;
+	text-decoration: none;
+	color: inherit;
+	border-bottom: rem(1) solid rgba($accent, .5);
+
+	@include transition-property(color, border-color);
+	@include transition-duration(.15s);
+	@include transition-timing-function(ease-in-out);
+
+	&:hover, &:active {
+		border-bottom-color: $accent;
+		color: $grey;
+	}
+
+	&:active {
+		@include transform(translateY(1px));
+	}
 }

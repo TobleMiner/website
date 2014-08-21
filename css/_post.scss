@@ -1,0 +1,172 @@
+p, li, figcaption {
+	color: lighten($grey, 15%);
+	line-height: 2em;
+}
+
+article {
+	padding: 0 em(20);
+	margin-bottom: 2rem;
+
+	&.small {
+		&:before {
+			content: "— ";
+			color: lighten($grey, 45%);
+		}
+
+		&:last-of-type {
+			padding-bottom: 7rem;
+		}
+
+		time {
+			color: lighten($grey, 45%);
+			padding-left: .5em;
+		}
+
+		a {
+			border-width: 0;
+		}
+
+		.title {
+			padding-left: .5em;
+		}
+	}
+
+	header {
+		text-align: center;
+
+		h1 {
+			font-weight: 500;
+			font-size: 2.5rem;
+
+			a {
+				padding: 0 .5em;
+				border-width: rem(2);
+			}
+
+			&:hover:after {
+				display: none;
+			}
+		}
+
+		p {
+			color: lighten($grey, 45%);
+			font-style: italic;
+		}
+	}
+
+	p {
+		padding: 0 .5em;
+		font-size: rem(19);
+
+		&.note {
+			font-style: italic;
+			color: lighten($grey, 45%);
+			text-align: center;
+		}
+
+		&.continue a {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: em(12, 19);
+			letter-spacing: .1em;
+			padding-left: .1em;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	a {
+		color: lighten($grey, 20%);
+	}
+
+	blockquote p {
+		padding: 0;
+		font-size: 2em;
+		font-style: italic;
+		color: lighten($grey, 45%);
+	}
+
+	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
+		padding-bottom: 3.75rem;
+	}
+
+	code, pre {
+		font-family: monospace;
+	}
+
+	pre {
+		line-height: 1.5rem;
+		overflow-x: auto;
+	}
+
+	ol, ul {
+		padding-left: 1em;
+	}
+
+	ul li {
+		list-style: none;
+
+		&:before {
+			content: "-";
+			padding-right: .5em;
+			color: lighten($grey, 45%);
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 500;
+
+		&:hover {
+			cursor: default;
+		}
+
+		code {
+			font-weight: 400;
+		}
+	}
+
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 1.4rem;
+	}
+
+	h6 {
+		font-size: 1.25rem;
+	}
+
+	:target {
+		padding-top: .5em;
+
+		&:before {
+			content: " ";
+			padding-right: .5em;
+			border-left: rem(4) solid lighten($accent, 50%);
+		}
+	}
+
+	sup, sub {
+		font-size: .75em;
+	}
+
+	sup {
+		vertical-align: super;
+	}
+
+	sub {
+		vertical-align: sub;
+	}
+}

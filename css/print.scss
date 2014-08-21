@@ -1,0 +1,63 @@
+---
+---
+@import "bourbon/bourbon";
+@import "settings";
+
+pre, img, figure, ul, li {
+	page-break-inside: avoid;
+}
+
+pre {
+	overflow: hidden;
+	white-space: pre-wrap;
+}
+
+body > header a {
+	&:before {
+		content: "From ";
+	}
+
+	&:after {
+		content: ".eu";
+	}
+}
+
+article, footer {
+	p a {
+		color: inherit;
+
+		&:after {
+			content: " (" attr(href) ") ";
+			color: lighten($grey, 25%);
+		}
+	}
+}
+
+.home {
+	@include size(auto);
+	position: static;
+	padding: 5rem 0;
+
+	ul {
+		padding-top: 5rem;
+	}
+
+	li {
+		display: block;
+
+		&:after {
+			display: none;
+		}
+
+		a {
+			line-height: 2em;
+			border-width: 0;
+
+			&:after {
+				content: ": https://elomatreb.eu" attr(href);
+				text-transform: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+}

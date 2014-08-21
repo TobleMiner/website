@@ -1,0 +1,68 @@
+.home {
+	display: table;
+
+	> div {
+		display: table-cell;
+		vertical-align: middle;
+
+		> div {
+			text-align: left;
+			width: em(440);
+			margin: 0 auto;
+		}
+	}
+
+	h1, h2 {
+		font-family: $serif;
+		font-weight: bold;
+		font-style: italic;
+		line-height: 2rem;
+	}
+
+	h1 {
+		font-size: rem(22);
+	}
+
+	h2 {
+		font-size: rem(15);
+		color: $accent;
+	}
+
+	span {
+		color: lighten($grey, 30%)
+	}
+
+	ul {
+		padding-top: .25rem;
+		font-size: 0;
+	}
+
+	li {
+		font-size: rem(11);
+		display: inline-block;
+		line-height: rem(22);
+
+		&:after {
+			content: "/";
+			font-size: rem(9);
+			margin-right: .5em;
+			color: lighten($grey, 35%);
+		}
+
+		&:last-of-type:after {
+			content: none;
+			display: none;
+		}
+
+		a {
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			padding-left: .1em;
+			margin-right: .5em;
+
+			&:hover {
+				color: $grey;
+			}
+		}
+	}
+}

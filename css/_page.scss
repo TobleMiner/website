@@ -1,0 +1,35 @@
+body > header {
+	padding: 7.5rem em(20);
+	text-align: center;
+
+	a {
+		background-color: $accent;
+		border-width: 0;
+		color: #fff;
+		font-weight: 700;
+		font-style: italic;
+		font-size: rem(22);
+		font-family: $serif;
+		line-height: 2em;
+		padding: 0 1em;
+
+		&:hover, &:active {
+			color: lighten($accent, 50%);
+		}
+	}
+}
+
+.page {
+	.email {
+		font-size: 1.25em;
+		font-weight: 500;
+	}
+
+	.pgp {
+		font-size: .85em;
+
+		span {
+			font-family: monospace;
+		}
+	}
+}
