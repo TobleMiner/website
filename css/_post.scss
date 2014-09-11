@@ -52,7 +52,8 @@ article {
 	}
 
 	p {
-		padding: 0 .5em;
+		padding-left: .5em;
+		padding-right: .5em;
 		font-size: rem(19);
 
 		&.note {
@@ -62,11 +63,8 @@ article {
 		}
 
 		&.continue a {
-			text-transform: uppercase;
-			font-weight: 500;
+			@extend %action-link;
 			font-size: em(12, 19);
-			letter-spacing: .1em;
-			padding-left: .1em;
 		}
 
 		img {
@@ -85,7 +83,7 @@ article {
 		color: lighten($grey, 45%);
 	}
 
-	p, blockquote, figure, ul, ol, .highlight, h1, h2, h3, h4, h5, h6 {
+	p, blockquote, figure, ul, ol, pre, h1, h2, h3, h4, h5, h6 {
 		@extend %block-level;
 	}
 

@@ -2,10 +2,22 @@
 // stylesheet.
 
 //		TOC
-// 1. Content Elements
+// 1. Miscellaneous
+// 2. Content
 
+
+//	Miscellaneous
+// Various styles that are not bound to a specific purpose
 //
-// Content elements
+%action-link {
+	font-weight: 500;
+	letter-spacing: .1em;
+	padding-left: .1em;
+	text-transform: uppercase;
+}
+
+// 	Content
+// These are mostly used by elements that occur inside the main <article> tag
 // 
 %block-level {
 	padding-bottom: 3.75rem;
