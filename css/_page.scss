@@ -3,20 +3,8 @@ body > header {
 	text-align: center;
 
 	a {
-		background-color: $accent;
-		border-width: 0;
-		color: #fff;
-		display: inline-block;
-		font-weight: 700;
-		font-style: italic;
-		font-size: rem(22);
-		font-family: $serif;
-		line-height: 2em;
-		padding: 0 1em;
-
-		&:hover, &:active {
-			color: lighten($accent, 50%);
-		}
+		color: lighten($grey, 25%);
+		padding: 0 .25em .25em .25em;
 	}
 }
 
