@@ -1,3 +1,4 @@
 _site/
 css/bourbon/
 .sass-cache/
+.pygments-cache/
