@@ -2,8 +2,3 @@ html, body, .home {
 	@include size(100%);
 	position: relative;
 }
-
-article, header, footer p {
-	max-width: em(760);
-	margin: 0 auto;
-}
