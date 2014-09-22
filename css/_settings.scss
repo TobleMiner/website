@@ -1,7 +1,13 @@
+// Fonts
 $main_font: "Source Serif Pro", Georgia, serif;
 $alt_font: "Crimson Text", Georgia, serif;
 $logo_font: Lora, $alt_font;
 $monospace: "Source Code Pro", Consolas, monospace;
 
+// Colors
 $accent: #0e407b;
 $grey: #222;
+
+// Sizes/Layout options
+$element-width: 740; // Paragraphs, etc
+$wide-element-width: $element-width + 120; // Images, quotes, code, etc.
