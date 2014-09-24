@@ -2,8 +2,9 @@
 ---
 @import "bourbon/bourbon";
 @import "settings";
+@import "abstracts";
 
-pre, img, figure, ul, li {
+#{$all-block-level-elements} {
 	page-break-inside: avoid;
 }
 

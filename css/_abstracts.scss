@@ -25,7 +25,10 @@
 	margin: 0 auto;
 }
 
-%aside-content {
+// All block-level elements that need spacing in articles, etc
+$all-block-level-elements: p, blockquote, figure, ul, ol, pre, h1, h2, h3, h4, h5, h6;
+
+%aside-content { // Using Crimson Text:600italic as italic font, since Source Serif has no italics yet (https://github.com/adobe-fonts/source-serif-pro/issues/2)
 	font-family: $alt_font;
 	font-style: italic;
 	font-weight: 600;
