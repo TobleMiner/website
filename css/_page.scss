@@ -8,17 +8,21 @@ body > header {
 	}
 }
 
-.page {
-	.email {
-		font-size: 1.25em;
-		font-weight: 500;
+.email {
+	li:before {
+		content: " ";
 	}
 
-	.pgp {
-		font-size: .85em;
+	li:first-of-type {
+		font-size: 1.25em;
+	}
 
-		span {
-			font-family: $monospace;
-		}
+	li:last-of-type {
+		font-size: .85em;
+		color: lighten($grey, 25%);
+	}
+
+	span {
+		font-family: $monospace;
 	}
 }
