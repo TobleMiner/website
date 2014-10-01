@@ -9,6 +9,8 @@ article {
 	margin-bottom: 2rem;
 
 	&.small {
+		@extend %block-level;
+
 		&:before {
 			content: "— ";
 			color: lighten($grey, 45%);
