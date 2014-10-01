@@ -13,15 +13,15 @@ layout: default
 
 	<nav>
 		<p>
-		{% if page.next %}
-			<a href="{{ page.next.url }}" class="next">{{ page.next.title }}</a>
-		{% endif %}
-
-			<a href="/blog/">Back to blog index</a>
-
-		{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="prev">{{ page.previous.title }}</a>
-		{% endif %}
+			<span>
+			{% if page.next %}
+				<a href="{{ page.next.url }}" class="next">{{ page.next.title }}</a>
+			{% endif %}
+			{% if page.previous %}
+				<a href="{{ page.previous.url }}" class="prev">{{ page.previous.title }}</a>
+			{% endif %}
+			</span>
+			<a href="/blog/" class="index">Back to blog index</a>
 		</p>
 	</nav>
 </main>

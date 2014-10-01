@@ -248,4 +248,46 @@ main nav {
 	p {
 		@extend %block-level;
 	}
+
+	span { // Used for layouting
+		@include clearfix();
+	}
+
+	.prev, .next {
+		display: block;
+		background: transparent;
+
+		&:before {
+			display: block;
+			font-size: .75em;
+			font-weight: 700;
+			color: lighten($grey, 45%);
+		}
+	}
+
+	.next {
+		text-align: left;
+		float: left;
+
+		&:before {
+			content: "NEXT";
+		}
+	}
+
+	.prev {
+		text-align: right;
+		float: right;
+
+		&:before {
+			content: "PREVIOUS";
+		}
+	}
+
+	.index {
+		@extend %action-link;
+
+		display: inline-block;
+		padding-top: 2rem;
+		font-size: rem(15);
+	}
 }
