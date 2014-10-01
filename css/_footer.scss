@@ -13,8 +13,13 @@ footer {
 		padding-bottom: 1.25rem;
 		color: lighten($grey, 25%);
 
-		&:first-of-type {
+		&.copyright {
 			font-size: rem(15)
 		}
+	}
+
+	.links a {
+		padding: 0 1em;
+		background: transparent;
 	}
 }
