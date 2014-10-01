@@ -63,7 +63,7 @@ module Jekyll
         @caption = "<figcaption>#{$1}<a href='#{$2}'>#{$3 || 'link'}</a></figcaption>"
       elsif markup =~ Caption
         @file = $1
-        @caption = "<figcaption>#{$1.strip}</figcaption>\n"
+        @caption = "" # "<figcaption>#{$1.strip}</figcaption>\n"
       end
       if @file =~ /\S[\S\s]*\w+\.(\w+)/ && @filetype.nil?
         @filetype = $1
