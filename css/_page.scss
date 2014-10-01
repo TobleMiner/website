@@ -8,6 +8,10 @@ body > header {
 	}
 }
 
+.icon {
+	@include size(rem(24));
+}
+
 .email {
 	li:before {
 		content: " ";

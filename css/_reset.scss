@@ -42,23 +42,35 @@ a {
 	line-height: 1.618em;
 	text-decoration: none;
 	color: inherit;
-	@include background-image(linear-gradient(rgba($accent, .5), rgba($accent, .5)));
+	@include background-image(
+		linear-gradient(rgba($accent, .5), rgba($accent, .5))
+	);
 	background-size: 1px 1px;
 	background-repeat: repeat-x;
 	background-position: 0 100%;
 	overflow-y: visible;
 
-	@include transition-property(color, text-shadow);
-	@include transition-duration(.15s);
-	@include transition-timing-function(ease-in-out);
+	&, & svg {
+		@include transition-property(color, text-shadow, fill);
+		@include transition-duration(.15s);
+		@include transition-timing-function(ease-in-out);
+	}
 
 	&:hover {
 		color: $grey;
+
+		svg {
+			fill: $accent;
+		}
 	}
 
 	&:active {
 		color: transparent;
 		@include transition-duration(0);
 		text-shadow: 0 0 2px rgba($grey, .75);
+
+		svg {
+			fill: darken($accent, 15%);
+		}
 	}
 }
