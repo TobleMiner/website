@@ -1,9 +1,14 @@
 # Site settings
 title: elomatreb
-email: ole@elomatreb.eu
 description: "elomatreb's website and portfolio."
 baseurl: ""
 url: "https://elomatreb.eu"
+
+# External links
+email: mailto:ole@elomatreb.eu
+twitter: https://twitter.com/elomatreb
+github: https://github.com/elomatreb
+codepen: http://codepen.io/elomatreb
 
 # Build settings
 markdown: redcarpet
