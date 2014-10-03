@@ -62,3 +62,15 @@ article, footer {
 		}
 	}
 }
+
+footer {
+	.links {
+		a {
+			display: block;
+		}
+
+		svg {
+			@include size(rem(16));
+		}
+	}
+}
