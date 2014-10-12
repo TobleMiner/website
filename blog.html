@@ -10,7 +10,14 @@ permalink: "/blog/"
 			<p>Published {% include _date.html date=p.date %}.</p>
 		</header>
 
+		{% comment %}
+		Workaround for https://github.com/jekyll/jekyll/issues/2968
+		{% endcomment %}
+		{% if p contains "<p>" %} 
 		{{ p.excerpt }}
+		{% else %}
+		<p>{{ p.excerpt }}</p>
+		{% endif %}
 
 		<p class="continue"><a href="{{ p.url }}">Continue reading</a></p>
 	</article>
