@@ -21,6 +21,8 @@ exclude:
   - elomatreb.eu.sublime-project
   - elomatreb.eu.sublime-workspace
   - vendor
+  - README.md
+  - LICENSE.md
 
 gems:
   - jekyll-sitemap
