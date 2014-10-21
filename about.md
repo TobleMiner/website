@@ -4,17 +4,19 @@ title: About Me
 ---
 
 Hi! I am Ole Bertram, or elomatreb, a 17 year old web designer and developer 
-from the north of Germany (Schleswig-Holstein).
+from the north of Germany (Schleswig-Holstein). I love building and designing 
+websites, programming, making things work the way I want them to, art of any 
+kind, and learning new things in general.
 
 ## Contact
 
-If you want to tell me something or ask me any questions, E-Mail is propably 
+If you want to tell me something or ask me any questions, E-Mail is probably 
 the best way. Please use OpenPGP (GnuPG) if your message contains sensitive 
 details!
 
 <ul class="email">
 	<li><a href="mailto:ole@elomatreb.eu">ole@elomatreb.eu</a></li>
-	<li>PGP-Fingerprint: <span title="Fingerprint">74E0 B317 4A43 53FF D86E  7EAF 5AE6 943A 31E3 6AEC</span> [ <a href="/files/pgp/public_key.txt">self</a> / <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x5AE6943A31E36AEC">MIT</a> / <a href="https://keybase.io/elomatreb">keybase.io</a> ]</li>
+	<li>PGP-Fingerprint: <code title="Fingerprint">74E0 B317 4A43 53FF D86E  7EAF 5AE6 943A 31E3 6AEC</code> [ <a href="/files/pgp/public_key.txt">self</a> / <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x5AE6943A31E36AEC">MIT</a> / <a href="https://keybase.io/elomatreb">keybase.io</a> ]</li>
 </ul>
 
 If you don't care that your message is public, my [Twitter][twitter] is also a 
@@ -26,7 +28,7 @@ at [ole@elomatreb.eu][xmpp].
 ## Work
 
 If you want to get an impression of my work, I would recommend viewing my 
-<a href="/work/">portfolio</a>.
+[portfolio][portfolio] or download my [CV][cv].
 
 Another useful resource may be my [GitHub account][github], where you can see 
 my contributions to various Open Source software projects, or maybe my 
@@ -34,6 +36,8 @@ my contributions to various Open Source software projects, or maybe my
 random web technologies.
 
 [twitter]: 	https://twitter.com/elomatreb
-[xmpp]:		xmpp://ole@elomatreb.eu
+[xmpp]:		xmpp:ole@elomatreb.eu
 [github]: 	https://github.com/elomatreb
 [codepen]: 	http://codepen.io/elomatreb
+[portfolio]: /work/
+[cv]:		/files/cv_ole_bertram.pdf
