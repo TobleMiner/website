@@ -3,7 +3,7 @@ require "mini_magick"
 task :default => 'build'
 
 desc "Build the site using Jekyll (including assets)"
-task :build => :scale_images do
+task :build => [:setup, :scale_images] do
 	puts "Building Jekyll site using config in _config.yml...\n\n"
 	sh "bundle exec jekyll build"
 end
@@ -24,5 +24,12 @@ task :scale_images do
 			FileUtils.cp i, "#{i}.~" # Backup existing image
 			image.write i
 		end
+	end
+end
+
+desc "Setup dependencies"
+task :setup do
+	unless File.directory?(File.expand_path("css/bourbon/"))
+		sh "bundle exec bourbon install --path=css/"
 	end
 end

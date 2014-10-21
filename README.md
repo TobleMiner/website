@@ -13,11 +13,11 @@ Since the SCSS utilizes [Bourbon](https://github.com/thoughtbot/bourbon), it is
 necessary to install the files manually.
 
 ```
-$ bourbon install --path=css/
+$ rake setup
 ```
 
-The `Rakefile` in this repository provides several commands useful if you want 
-to build a local copy of the site.
+The `Rakefile` in this repository provides several other useful commands if you 
+want to build a local copy of the site.
 
 ## Legal
 
