@@ -1,8 +1,8 @@
 # [elomatreb.eu](https://elomatreb.eu)
 
-![Build status](https://api.travis-ci.org/elomatreb/website.svg?branch=master)
+[![Build status](https://api.travis-ci.org/elomatreb/website.svg?branch=master)](https://travis-ci.org/elomatreb/website)
 
-My personal website, blog and portfolio. Built using [Jekyll][jekyll].
+My personal website, blog and portfolio. Built using [Jekyll](https://github.com/jekyll/jekyll).
 
 ## Development
 
