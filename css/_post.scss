@@ -12,7 +12,7 @@ article {
 		@extend %block-level;
 
 		&:before {
-			content: "— ";
+			content: "\2014 ";
 			color: lighten($grey, 45%);
 		}
 
