@@ -1,14 +1,6 @@
-RewriteEngine On
-
-# Always enable HTTPS (If available)
-<IfModule mod_ssl.c>
-	RewriteCond %{HTTPS} !=on
-	RewriteCond %{ENV:HTTPS} !=on
-	RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-</IfModule>
-
 # Obscure PHP version
 Header set X-Powered-By "Kittens"
 
 # favicon.ico is inside of img/
+RewriteEngine On
 RewriteRule ^favicon\.ico$ /img/favicon.ico
