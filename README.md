@@ -1,4 +1,4 @@
-# `[ole.bertr.am](https://bertr.am)`
+# [`ole.bertr.am`](https://bertr.am)
 
 [![Build status](https://api.travis-ci.org/elomatreb/website.svg?branch=master)](https://travis-ci.org/elomatreb/website)
 
