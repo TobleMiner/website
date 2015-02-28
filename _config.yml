@@ -1,11 +1,11 @@
 # Site settings
-title: elomatreb
-description: "elomatreb's website and portfolio."
+title: ole.bertr.am
+description: "Ole Bertram's website and portfolio."
 baseurl: ""
-url: "https://elomatreb.eu"
+url: "https://bertr.am.eu"
 
 # External links
-email: mailto:ole@elomatreb.eu
+email: mailto:ole@bertr.am
 twitter: https://twitter.com/elomatreb
 github: https://github.com/elomatreb
 codepen: http://codepen.io/elomatreb

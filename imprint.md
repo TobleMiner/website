@@ -12,7 +12,7 @@ title: Impressum
 	<li>24241 Blumenthal</li>
 </ul>
 
-* [webmaster@elomatreb.eu][email]
+* [webmaster@bertr.am][email]
 
 ## Haftungsauschluss
 
@@ -34,4 +34,4 @@ Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten d
 
 <p class="note">Quellverweis: <a href="http://www.e-recht24.de/muster-disclaimer.html">eRecht24</a></p>
 
-[email]: 	mailto:webmaster@elomatreb.eu
+[email]: 	mailto:webmaster@bertr.am

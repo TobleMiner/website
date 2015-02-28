@@ -15,7 +15,7 @@ the best way. Please use OpenPGP (GnuPG) if your message contains sensitive
 details!
 
 <ul class="email">
-	<li><a href="mailto:ole@elomatreb.eu">ole@elomatreb.eu</a></li>
+	<li><a href="mailto:ole@bertr.am">ole@bertr.am</a></li>
 	<li>PGP-Fingerprint: <code title="Fingerprint">74E0 B317 4A43 53FF D86E  7EAF 5AE6 943A 31E3 6AEC</code> [ <a href="/files/pgp/public_key.txt">self</a> / <a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x5AE6943A31E36AEC">MIT</a> / <a href="https://keybase.io/elomatreb">keybase.io</a> ]</li>
 </ul>
 
