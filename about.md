@@ -20,7 +20,7 @@ details!
 </ul>
 
 If you don't care that your message is public, my [Twitter][twitter] is also a 
-very good option, although I use it mostly to rant about about things.
+very good option, although I use it mostly to rant about things.
 
 For Instant Messaging, I don't really use anything besides XMPP ("Jabber")
 at [ole@elomatreb.eu][xmpp].
